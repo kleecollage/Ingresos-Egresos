@@ -1,15 +1,15 @@
 spring:
   datasource:
-    url: jbc:sqlserver://localhost:5555; databaseName=(nombreDB)
-    username:
+    url: jbc:sqlserver://localhost:3306; databaseName=equisde
+    username: root
     password:
-    driver-class-name: com.mysql.jdbc
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 jpa:
   hibernate:
     ddl-auto: update
   properties:
     hibernate:
-      dialect: org.hibernate.dialect.SQLServerDialect
+      dialect: org.hibernate.dialect.MySQL8Dialect
       jbdc:
         time_zone: UTC
