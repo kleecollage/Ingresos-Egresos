@@ -8,12 +8,12 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "Saldo")
-public class flujo {
+public class Flujo {
 
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id ;
+    private Long id ;
 
     @NotNull
     @Size (max = 255)
@@ -82,8 +82,5 @@ public class flujo {
     public void setSaldo(Float saldo) {
         Saldo = saldo;
     }
-
-
-
 
 }
