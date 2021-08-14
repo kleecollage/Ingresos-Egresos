@@ -1,23 +1,20 @@
 package com.ineg.ineg.controllers;
-
-import com.ineg.ineg.services.FlujoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/flujo")
+@RequestMapping("/flujo")
 
-public class FlujoControllers {
-
+public class flujoControllers {
     @Autowired
     FlujoService flujoService;
-
-        @RequestMapping(value = "/saldo")
-        public List getSaldo(){
-            return flujoService.getSaldoFromDB() ;
-        }
-
+    @RequestMapping (value = "/dblist", method = RequestMethod.GET)
+    public List getList() {
+        return
+    }
 }
+
