@@ -19,5 +19,8 @@ public class FlujoControllers {
 
         return flujoService.getSaldoFromDB() ;
     }
+
+    @PostRequest ("/ingreso")
+    
 }
 
