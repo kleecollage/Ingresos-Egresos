@@ -1,9 +1,8 @@
 package com.ineg.ineg.controllers;
+import com.ineg.ineg.models.Flujo;
 import com.ineg.ineg.services.FlujoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,7 +19,10 @@ public class FlujoControllers {
         return flujoService.getSaldoFromDB() ;
     }
 
-    @PostRequest ("/ingreso")
-    
+    @PostMapping ("/ingreso")
+    public Flujo newIngreso (@RequestBody  Flujo flujo) {
+        return flujoService.ingreso ( flujo ) ;
+    }
+
 }
 
