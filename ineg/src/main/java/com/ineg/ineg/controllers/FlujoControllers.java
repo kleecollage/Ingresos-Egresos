@@ -24,5 +24,9 @@ public class FlujoControllers {
         return flujoService.ingreso ( flujo ) ;
     }
 
+    @PostMapping ("/egreso")
+    public Flujo newEgreso (@RequestBody Flujo flujo) {
+    return flujoService.egreso ( flujo ) ;
+    }
 }
 

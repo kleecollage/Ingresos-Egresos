@@ -18,7 +18,11 @@ public class FlujoService {
     }
 
     public Flujo ingreso (Flujo flujo){
-        return flujoRepository.saveAndFlush( flujo ) ;
+        return flujoRepository.saveAndFlush ( flujo ) ;
+    }
+
+    public Flujo egreso (Flujo flujo){
+        return flujoRepository.saveAndFlush ( flujo ) ;
     }
 }
 
